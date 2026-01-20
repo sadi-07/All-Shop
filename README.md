@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Description
 
-## Getting Started
+This project is a **shop-based web application** built with **Next.js 16v (App Router)**.  
+Users can browse products, view product details, explore shop sections, and interact with a modern animated UI.  
+The app includes **mock authentication**, **public and protected routes**, and **product data fetched from a JSON API**.
 
-First, run the development server:
+---
 
+## Setup & Installation Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/sadi-07/All-Shop
+cd my-nextjs-app
+```
+2. Install dependencies
+```bash
+npm install
+```
+3. Run development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+4. Open in browser
+```bash
+http://localhost:3000
+```
+5. Production build
+```bash
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Route Summary
+    /      -> Landing page
+    /login -> Authentication Page
+    /products -> Products list page
+    /products/id -> Product details page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Implemented Features
 
-To learn more about Next.js, take a look at the following resources:
+    Landing page with static sections
+    Mock authentication
+    Cookie based login
+    Public Product pages
+    Implemented Loader
+    Animated UI with framer-motion
+    Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Explanation of features
 
-## Deploy on Vercel
+Landing Page: Introduces the shop and highlights offerings using static, animated sections.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Authentication: Demonstrates login flow using cookies.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Product List Page: Displays products fetched from a JSON API.
+
+Product Details Page: Shows complete product information for a selected item.
+
+UI Enhancements: Animations, hover effects, loaders, and responsive design improve user experience.
+
+---
